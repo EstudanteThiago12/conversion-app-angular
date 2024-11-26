@@ -9,12 +9,14 @@
 }
 
 .option-container {
-  display: flex;
+  display: column;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  
 
   input {
     margin: 0 8px;
+    flex-direction: column;
   }
 }
 
@@ -22,7 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   margin-top: 16px;
 
   span {
@@ -31,6 +33,12 @@
 
   button {
     margin-left: 8px;
+    background-color: rgb(255, 255, 252);
+    border-radius: 2vh;
+  }
+
+  button:hover{
+    background-color: rgb(203, 199, 199);
   }
 }
 
@@ -44,4 +52,9 @@
   span {
     margin-right: 8px;
   }
+}
+h1{
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  font-size: 5vh;
 }

@@ -1,13 +1,22 @@
 <div class="container">
-  <h1>Conversor de moeda</h1>
+  <h1>Conversor de Moeda</h1>
 
   <div class="option-container">
     <input [(ngModel)]="opcaoEscolhida" type="radio" name="moeda" value="BRL-USD">
-    <span>Real para Dólar</span>
-  </div>
+    <span>Real » Dólar </span><br>
+
+    <input [(ngModel)]="opcaoEscolhida" type="radio" name="moeda" value="BRL-EUR">
+    <span>Real  » Euro</span><br>
+ 
+    <input [(ngModel)]="opcaoEscolhida" type="radio" name="moeda" value="BRL-PEN">
+    <span>Real » Sol do Peru</span><br>
+
+    <input [(ngModel)]="opcaoEscolhida" type="radio" name="moeda" value="BRL-PHP">
+    <span>Real  » Peso Filipino</span><br>
+   </div>
 
   <div class="input-container">
-    <span>Valor</span>
+    <span>Insira um valor :</span>
     <input [(ngModel)]="valor" type="number">
     <button (click)="calcularConversao()">Calcular</button>
   </div>
@@ -18,3 +27,4 @@
   </div>
 
 </div>
+
